@@ -14,3 +14,7 @@
 - Go to frontend folder
 - `npm install` to install all required dependencies
 - `npm start` to start the local server
+
+
+### Demo:
+ - [Markdown video demo](https://drive.google.com/file/d/1jnb7sVCKmFWRlQ5Ee-1l0Ra10sAv1KJh/view?usp=sharing)
