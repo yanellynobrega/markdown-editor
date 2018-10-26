@@ -68,3 +68,7 @@ button:focus {
 .overauto {
   overflow: auto !important;
 }
+
+.MuiTypography-subheading-105 {
+  font-size: 0.9rem !important;
+}

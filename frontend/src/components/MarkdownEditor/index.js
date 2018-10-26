@@ -63,9 +63,13 @@ class MarkdownEditor extends Component {
   }
 
   handleCreateFile() {
+    const { files } = this.state;
     var title = prompt("Please enter the name of the markdown");
-    if (title && title.length > 0)
-      createFile({ title, content: "" }).then(() => this.handleGetFiles());
+    if(title )
+        if (files.find(d => d.title.trim().toLowerCase() === title.trim().toLowerCase()))
+            alert("the name of the markdown already exists");
+        else
+            createFile({ title, content: "" }).then(() => this.handleGetFiles());
   }
 
   handleUpdateFile(value) {
