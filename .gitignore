@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+#API's documentation
+documentation
+
+# IDE files
+.idea
+.vscode
+.history
+
+# Logs
+logs
+*.log
+
+# Enviroments
+.env
