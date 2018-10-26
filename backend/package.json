@@ -1,0 +1,14 @@
+{
+  "name": "markdown-editor-backend",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node ./app.js"
+  },
+  "dependencies": {
+    "body-parser": "1.15.0",
+    "cors": "^2.8.4",
+    "express": "4.13.4",
+    "method-override": "^2.1.2",
+    "mongoose": "4.4.10"
+  }
+}
