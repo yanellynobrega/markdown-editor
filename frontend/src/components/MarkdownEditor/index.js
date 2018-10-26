@@ -57,7 +57,7 @@ class MarkdownEditor extends Component {
   }
 
   handleDeleteFile(file) {
-    if (window.confirm(`Are you sure you want to delete "${file.title}"`)) {
+    if (window.confirm(`Are you sure you want to delete "${file.title}" ?`)) {
       deleteFile(file._id || file.id).then(() => this.handleGetFiles());
     }
   }
@@ -67,7 +67,7 @@ class MarkdownEditor extends Component {
     var title = prompt("Please enter the name of the markdown");
     if(title )
         if (files.find(d => d.title.trim().toLowerCase() === title.trim().toLowerCase()))
-            alert("the name of the markdown already exists");
+            alert("The name of the markdown already exists");
         else
             createFile({ title, content: "" }).then(() => this.handleGetFiles());
   }
